@@ -52,7 +52,7 @@ func encryptUsingGcm(secret string, key string) ([]byte, error) {
 }
 
 func Decrypt(encryptedText []byte) ([]byte, error) {
-	c, err := aes.NewCipher([]byte(secretKey))
+	c, err := aes.NewCipher([]byte(secretKey1))
 	if err != nil {
 		return nil, err
 	}
